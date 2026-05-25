@@ -4,4 +4,7 @@ ENV SETUP :
 uv init
 uv python install 3.12
 uv venv .venv --python 3.12
-
+uv python pin 3.12
+uv pip install -r .\requirements.txt
+uv add -r .\requirements.txt                -- to update pyproject.toml
+uv sync
