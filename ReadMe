@@ -1,1 +1,7 @@
 Sample Python
+
+ENV SETUP :
+uv init
+uv python install 3.12
+uv venv .venv --python 3.12
+
